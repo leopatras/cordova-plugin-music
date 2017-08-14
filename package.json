@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-music",
+  "version": "1.0.0",
+  "description": "music plugin",
+  "cordova": {
+    "id": "com.cordova.music",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hvlads/cordova-plugin-music.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hvlads/cordova-plugin-music/issues"
+  },
+  "homepage": "https://github.com/hvlads/cordova-plugin-music#readme"
+}
