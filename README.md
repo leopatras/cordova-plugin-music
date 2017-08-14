@@ -1,10 +1,10 @@
 # cordova-plugin-music
 
 This plugin provides the ability to retrieve songs list, playlist, songs from playlist, play and stop song.
-
+Forked from hafizbilal112/cordova-plugin-music
 ## Installation
 
-    cordova plugin add https://github.com/hafizbilal112/cordova-plugin-music
+    https://github.com/hvlads/cordova-plugin-music.git
 
 ## Supported Platforms
 
