@@ -20,5 +20,11 @@
 
 - (void)playSong:(CDVInvokedUrlCommand*)command;
 
+- (void)getAlbums:(CDVInvokedUrlCommand*)command;
+
+- (void)getArtists:(CDVInvokedUrlCommand*)command;
+
+
+
 
 @end
