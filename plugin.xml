@@ -37,7 +37,9 @@
         </config-file>
 
         <header-file src="src/ios/Music.h"/>
+        <header-file src="src/ios/mwebserver.h"/>
         <source-file src="src/ios/Music.m"/>
+        <source-file src="src/ios/mwebserver.m"/>
         <framework src="MediaPlayer.framework"/>
     </platform>
 </plugin>

@@ -1,13 +1,15 @@
 #import <Cordova/CDVPlugin.h>
 #import <Cordova/CDV.h>
+#import <MediaPlayer/MediaPlayer.h>
 #import <MediaPlayer/MPMediaQuery.h>
 #import <MediaPlayer/MPMediaPlaylist.h>
 
 #import <AVFoundation/AVFoundation.h>
 
-@interface Music : CDVPlugin <AVAudioPlayerDelegate>
+@interface Music : CDVPlugin <AVAudioPlayerDelegate,MPMediaPickerControllerDelegate>
 {
     AVAudioPlayer  *player;
+    NSString* _callbackID;
 }
 
 - (void) getPlaylists:(CDVInvokedUrlCommand*)command;

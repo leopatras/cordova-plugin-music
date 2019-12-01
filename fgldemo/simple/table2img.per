@@ -1,0 +1,15 @@
+LAYOUT
+TABLE
+{
+[f1         ][f2             ]
+}
+END
+END 
+
+ATTRIBUTES
+PHANTOM formonly.img;
+f1 = FORMONLY.text,SCROLL,IMAGECOLUMN=img;
+f2 = FORMONLY.detailText,SCROLL;
+
+INSTRUCTIONS SCREEN RECORD t3(FORMONLY.*);
+

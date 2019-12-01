@@ -1,0 +1,243 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3A6E65A1F41CC14007B7744 /* dummy_app.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A6E6591F41CC14007B7744 /* dummy_app.m */; };
+		B3ADE6FD23858DE400266FA7 /* mwebserver.m in Sources */ = {isa = PBXBuildFile; fileRef = B3ADE6FC23858DE400266FA7 /* mwebserver.m */; };
+		B3ADE7002385951300266FA7 /* Music.m in Sources */ = {isa = PBXBuildFile; fileRef = B3ADE6FF2385951300266FA7 /* Music.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B396175B1F3FFE72001E6B74 /* GMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B39617691F3FFE73001E6B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3A6E6591F41CC14007B7744 /* dummy_app.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = dummy_app.m; path = $PROJECT_FILE_PATH/dummy_app.m; sourceTree = SOURCE_ROOT; };
+		B3ADE6FC23858DE400266FA7 /* mwebserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mwebserver.m; path = ../../../src/ios/mwebserver.m; sourceTree = "<group>"; };
+		B3ADE6FE238591F000266FA7 /* mwebserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mwebserver.h; path = ../../../src/ios/mwebserver.h; sourceTree = "<group>"; };
+		B3ADE6FF2385951300266FA7 /* Music.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Music.m; path = ../../../src/ios/Music.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B39617581F3FFE72001E6B74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B396175C1F3FFE73001E6B74 /* GMI */ = {
+			isa = PBXGroup;
+			children = (
+				B3ADE6FF2385951300266FA7 /* Music.m */,
+				B3ADE6FE238591F000266FA7 /* mwebserver.h */,
+				B3ADE6FC23858DE400266FA7 /* mwebserver.m */,
+				B3A6E6591F41CC14007B7744 /* dummy_app.m */,
+				B39617691F3FFE73001E6B74 /* Info.plist */,
+			);
+			path = GMI;
+			sourceTree = "<group>";
+		};
+		B3AA81E01BE6E4A1007CA6EE = {
+			isa = PBXGroup;
+			children = (
+				B396175C1F3FFE73001E6B74 /* GMI */,
+				B3AA81EA1BE6E4A1007CA6EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3AA81EA1BE6E4A1007CA6EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B396175B1F3FFE72001E6B74 /* GMI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B396175A1F3FFE72001E6B74 /* GMI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B396176B1F3FFE73001E6B74 /* Build configuration list for PBXNativeTarget "GMI" */;
+			buildPhases = (
+				B39617571F3FFE72001E6B74 /* Sources */,
+				B39617581F3FFE72001E6B74 /* Frameworks */,
+				B39617591F3FFE72001E6B74 /* Resources */,
+				B396176F1F400466001E6B74 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GMI;
+			productName = GMI;
+			productReference = B396175B1F3FFE72001E6B74 /* GMI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3AA81E11BE6E4A1007CA6EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				TargetAttributes = {
+					B396175A1F3FFE72001E6B74 = {
+						DevelopmentTeam = KUVRWMB53Q;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B3AA81E41BE6E4A1007CA6EE /* Build configuration list for PBXProject "simple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = B3AA81E01BE6E4A1007CA6EE;
+			productRefGroup = B3AA81EA1BE6E4A1007CA6EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B396175A1F3FFE72001E6B74 /* GMI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B39617591F3FFE72001E6B74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B396176F1F400466001E6B74 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PROJECT_FILE_PATH/buildforxcode.sh $SRCROOT $ACTION";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B39617571F3FFE72001E6B74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3ADE7002385951300266FA7 /* Music.m in Sources */,
+				B3A6E65A1F41CC14007B7744 /* dummy_app.m in Sources */,
+				B3ADE6FD23858DE400266FA7 /* mwebserver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B396176A1F3FFE73001E6B74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KUVRWMB53Q;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $PROJECT_FILE_PATH/GMI_prefix.pch;
+				HEADER_SEARCH_PATHS = ../../src/ios;
+				INFOPLIST_FILE = $PROJECT_FILE_PATH/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fourjs.music;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3AA81F01BE6E4A1007CA6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development: Volker Schubert (59W7RY75ZU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: Volker Schubert (59W7RY75ZU)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B396176B1F3FFE73001E6B74 /* Build configuration list for PBXNativeTarget "GMI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B396176A1F3FFE73001E6B74 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B3AA81E41BE6E4A1007CA6EE /* Build configuration list for PBXProject "simple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3AA81F01BE6E4A1007CA6EE /* Debug */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3AA81E11BE6E4A1007CA6EE /* Project object */;
+}
