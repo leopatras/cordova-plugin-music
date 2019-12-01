@@ -10,7 +10,7 @@
 #calling make without parameters simply creates an GMI executable for the simulator
 #use "make gmi.install" to install on the simulator or device depending on the TARGET
 
-BUNDLE_IDENTIFIER   = com.4js.music
+BUNDLE_IDENTIFIER   = com.fourjs.music
 APPNAME             = Music
 DEVICE              = phone
 MODE                = debug
@@ -23,8 +23,13 @@ MUSIC=cordova-plugin-music
 # in case you build the demo when having the plugin checked out of github 
 # then we use the fglcvdMedia.42m in the fgl dir of the plugin
 ifneq ($(wildcard ../../plugin.xml),)
+  $(info build out of repo)
   MUSIC=$(CURDIR)/../..
   FGLLDPATH=../../fgl
+main.42: ../../fgl/fglcdvMusic.42m
+
+../../fgl/fglcdvMusic.42m:
+	$(MAKE) -C ../../fgl
 endif
 
 MODULES  = $(patsubst %.4gl, %.42m, $(wildcard *.4gl))

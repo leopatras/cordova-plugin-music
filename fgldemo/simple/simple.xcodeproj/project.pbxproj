@@ -168,7 +168,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fourjs.music;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GMI;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -193,6 +193,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Apple Development: Volker Schubert (59W7RY75ZU)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: Volker Schubert (59W7RY75ZU)";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
