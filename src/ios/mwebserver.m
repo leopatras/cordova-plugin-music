@@ -269,36 +269,34 @@ static void debugDealloc(NSObject* o)
   [self stop];
 }
 
-static bool createClientConnectionInt(CFSocketNativeHandle sock,MWebHTTPConnection* conn,MWebHTTPServer* srv) {
+static MWebHTTPConnection* createClientConnection(CFSocketNativeHandle sock,MWebHTTPServer* srv) {
+  MWebHTTPConnection* conn=nil;
   int flag = 1;
   setsockopt(sock, IPPROTO_TCP, TCP_NODELAY,(char *)&flag, sizeof(int));
-  bool result=true;
   CFReadStreamRef readStream = NULL;
   CFWriteStreamRef writeStream = NULL;
   CFStreamCreatePairWithSocket( kCFAllocatorDefault, sock, &readStream, &writeStream );
   if( readStream && writeStream ) {
     CFReadStreamSetProperty( readStream, kCFStreamPropertyShouldCloseNativeSocket, kCFBooleanTrue );
     CFWriteStreamSetProperty( writeStream, kCFStreamPropertyShouldCloseNativeSocket, kCFBooleanTrue );
-    conn=[conn initWithIn:(__bridge NSInputStream*)readStream
+    conn=[[MWebHTTPConnection alloc] initWithIn:(__bridge NSInputStream*)readStream
                                      andOut:(__bridge NSOutputStream*)writeStream
                 andSocket:sock andServer:srv];
   } else {
     //destroy native socket
     close( sock );
-    result=false;
   }
   if( readStream ) {CFRelease( readStream );}
   if( writeStream ) {CFRelease( writeStream );}
-  return result;
+  return conn;
 }
 
 static void AcceptCallBack(CFSocketRef accsock, CFSocketCallBackType type, CFDataRef address, const void *data, void *info)
 {
   if( type == kCFSocketAcceptCallBack ) {
     CFSocketNativeHandle sock = *(CFSocketNativeHandle*) data;
-    MWebHTTPConnection* conn=[MWebHTTPConnection alloc];
     MWebHTTPServer* srv=(__bridge MWebHTTPServer*)info;
-    createClientConnectionInt(sock,conn,srv);
+    createClientConnection(sock,srv);
   }
 }
 
